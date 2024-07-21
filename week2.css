@@ -76,6 +76,10 @@ body {
     border-radius: 32px 32px 32px 32px;
     font-family: 'Bruno Ace SC', sans-serif;
 }
+.btn > a {
+    color: black;
+    text-decoration: none;
+}   
 .btn > img {
     display: block;
 }
@@ -179,10 +183,15 @@ body {
 }
 .right-contact {
     margin: 0 -10px;
+    transition: box-shadow .3s;
 }
 .right-contact > img {
     display: block;
-    padding: 0 10px;
+    margin: 10px;
+}
+.right-contact > img:hover {
+    border-radius: 40px;
+    box-shadow: 0px -5px 20px 5px rgba(207, 201, 201, 0.582); 
 }
 .project {
     flex-direction: column;
@@ -221,9 +230,14 @@ body {
     padding: 12px 24px;
     border-radius: 32px 32px 32px 32px;
     font-family: 'Bruno Ace SC', sans-serif;
+    justify-content: space-evenly;
 }
 .more > img {
     display: block;
+}
+.more > a {
+    color: #FFF;
+    text-decoration: none;
 }
 .bottom-pic > img {
     display: block;
